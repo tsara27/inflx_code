@@ -21,6 +21,9 @@ gem 'rubocop', require: false
 gem 'slim'
 # Devise is a flexible authentication solution for Rails based on Warden
 gem 'devise'
+# Simple, Heroku-friendly Rails app configuration using ENV and a single YAML file
+gem 'figaro'
+
 
 group :development, :test do
   # Pry is a powerful alternative to the standard IRB shell for Ruby.
