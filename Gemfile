@@ -50,8 +50,10 @@ group :test do
   gem 'capybara'
   # Selenium is an umbrella project encapsulating a variety of tools and libraries enabling web browser automation.
   gem 'selenium-webdriver'
-  # Shoulda helps you write more understandable, maintainable Rails-specific tests using Minitest.
+  # Shoulda Matchers provides RSpec- and Minitest-compatible one-liners that test common Rails functionality.
   gem 'shoulda'
+  gem 'shoulda-matchers'
+  gem 'rails-controller-testing'
   # SimpleCov is a code coverage analysis tool for Ruby.
   gem 'simplecov', require: false
 end
