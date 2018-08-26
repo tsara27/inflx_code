@@ -1,0 +1,46 @@
+AllCops:
+  TargetRubyVersion: 2.5.1
+  Exclude:
+    - 'db/**/*'
+    - 'bin/**/*'
+    - 'config/**/*'
+    - 'Gemfile'
+    - 'spec/factories/**/*'
+    - 'spec/rails_helper.rb'
+    - 'spec/spec_helper.rb'
+    - 'vendor/**/*'
+    - 'tmp/*'
+
+Metrics/LineLength:
+  Max: 80
+
+Style/DocumentationMethod:
+  Enabled: false
+Style/Documentation:
+  Enabled: false
+
+Metrics/ModuleLength:
+  Exclude:
+    - "**/*_spec.rb"
+
+Style/PercentLiteralDelimiters:
+  Enabled: false
+
+Style/WordArray:
+  Enabled: false
+
+Metrics/BlockLength:
+  Exclude:
+    - "**/*_spec.rb"
+    - "spec/support/shared/*.rb"
+    - "lib/tasks/**/*.rake"
+
+Metrics/AbcSize:
+  Max: 25
+  Include:
+    - "**/*_spec.rb"
+
+Documentation:
+  Enabled: false
+Style/FrozenStringLiteralComment:
+  Enabled: false
