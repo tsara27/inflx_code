@@ -1,0 +1,12 @@
+doctype html
+html
+  head
+    title INFLX
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag 'application', media: 'all'
+  body
+    p = notice
+    p = alert
+    = yield
+    = javascript_include_tag 'application'

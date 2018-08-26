@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+    title INFLX
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag 'application', media: 'all'
+  body
+    = render 'layouts/client/navigation'
+    .container
+      = render 'shared/notice'
+      = render 'shared/alert'
+      = yield
+    = javascript_include_tag 'application'

@@ -54,6 +54,8 @@ group :test do
   gem 'shoulda'
   gem 'shoulda-matchers'
   gem 'rails-controller-testing'
+  # Easy installation and use of chromedriver, the Chromium project's selenium webdriver adapter.
+  gem 'chromedriver-helper'
   # SimpleCov is a code coverage analysis tool for Ruby.
   gem 'simplecov', require: false
 end

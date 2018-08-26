@@ -1,5 +1,9 @@
 {
   "name": "simple_crm",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "bootstrap": "^4.1.3",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1"
+  }
 }

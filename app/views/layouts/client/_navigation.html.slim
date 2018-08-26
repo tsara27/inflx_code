@@ -1,0 +1,11 @@
+nav.navbar.navbar-expand-md.navbar-dark.bg-dark.mb-4
+  a.navbar-brand[href="#"]
+    | INFLX
+  button.navbar-toggler[type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"]
+    span.navbar-toggler-icon
+  #navbarCollapse.collapse.navbar-collapse
+    ul.navbar-nav.mr-auto
+      li.nav-item = link_to 'Home', root_path, class: 'nav-link'
+      li.nav-item = link_to 'Users', '#', class: 'nav-link'
+    ul.navbar-nav.pull-right
+      li.nav-item = link_to 'Sign out', destroy_user_session_path, class: 'nav-link', method: :delete
