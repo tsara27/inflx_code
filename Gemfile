@@ -19,6 +19,8 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'rubocop', require: false
 # Slim is a template language whose goal is to reduce the view syntax to the essential parts without becoming cryptic.
 gem 'slim'
+# Devise is a flexible authentication solution for Rails based on Warden
+gem 'devise'
 
 group :development, :test do
   # Pry is a powerful alternative to the standard IRB shell for Ruby.
