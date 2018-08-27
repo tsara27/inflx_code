@@ -1,5 +1,12 @@
 require 'simplecov'
-SimpleCov.start 'rails'
+
+SimpleCov.profiles.define 'no_admin_coverage' do
+  load_profile 'rails'
+  add_filter 'admin'
+end
+
+SimpleCov.start 'no_admin_coverage'
+
 require 'spec_helper'
 ENV['RAILS_ENV'] ||= 'test'
 require File.expand_path('../config/environment', __dir__)

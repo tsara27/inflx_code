@@ -23,6 +23,8 @@ gem 'slim'
 gem 'devise'
 # Simple, Heroku-friendly Rails app configuration using ENV and a single YAML file
 gem 'figaro'
+# Active Admin is a framework for creating administration style interfaces.
+gem 'activeadmin'
 
 
 group :development, :test do
